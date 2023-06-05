@@ -8,7 +8,7 @@ interface IButtonProps {
 
 
 
-const Button = (props: IButtonProps)=> {
+const Button = (props: IButtonProps) => {
     return (
         <button
             className={`${props.buttonType}-button`}
