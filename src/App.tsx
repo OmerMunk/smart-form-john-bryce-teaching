@@ -5,6 +5,9 @@ import Button from "./components/Button/Button";
 
 import {Routes, Route} from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
+import Home from "./pages/Home/Home";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 function App() {
 
@@ -12,8 +15,9 @@ function App() {
         <>
             <Navigation/>
             <Routes>
-                <Route path={'/home'} element={<h1>This is home</h1>}/>
-                <Route path={'/about'} element={<h1>This is about</h1>}/>
+                <Route path={'/home'} element={<Home/>}/>
+                <Route path={'/about-us'} element={<AboutUs/>}/>
+                <Route path={'/contact-us'} element={<ContactUs/>}/>
             </Routes>
         </>
     );
