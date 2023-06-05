@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Kanye from "./pages/Kanye/Kanye";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                 <Route path={'/home'} element={<Home/>}/>
                 <Route path={'/about-us'} element={<AboutUs/>}/>
                 <Route path={'/contact-us'} element={<ContactUs/>}/>
+                <Route path={'/kanye'} element={<Kanye/>}/>
             </Routes>
         </>
     );

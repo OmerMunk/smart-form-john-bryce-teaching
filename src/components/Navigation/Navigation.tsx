@@ -13,6 +13,9 @@ const Navigation = () => {
             <NavLink to={'/contact-us'}>
                 Contact Us
             </NavLink>
+            <NavLink to={'/kanye'}>
+                Kanye
+            </NavLink>
         </nav>
     )
 }
