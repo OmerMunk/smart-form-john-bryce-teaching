@@ -6,6 +6,14 @@ const Home = () => {
 
     const [showSignup, setShowSignup] = useState<boolean>(false)
 
+    const displaySignup = () => {
+        setShowSignup(true)
+    }
+
+    const hideSignup = () => {
+        setShowSignup(false)
+    }
+
     return (
         <div>
             <h1>
@@ -13,10 +21,9 @@ const Home = () => {
             </h1>
             <Button
                 buttonType={'primary'}
-                onClick={() => {
-                }}
+                onClick={displaySignup}
                 text={'Sign Up'}/>
-            <Signup/>
+            {showSignup && <Signup hideSignup={hideSignup}/>}
         </div>
 
     )

@@ -1,4 +1,4 @@
-.primary-button, .secondary-button {
+.primary-button, .secondary-button, .reject-button {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -16,7 +16,11 @@
     background-color: #008CBA; /* Blue */
 }
 
-.primary-button:hover , .secondary-button:hover{
+.reject-button {
+    background-color: #dc0000; /* Blue */
+}
+
+.primary-button:hover, .secondary-button:hover, .reject-button:hover {
     cursor: pointer;
 }
 
@@ -26,4 +30,8 @@
 
 .secondary-button:hover {
     background-color: #006CBA;
+}
+
+.reject-button:hover {
+    background-color: #9d0000; /* Blue */
 }

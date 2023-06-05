@@ -1,7 +1,7 @@
 import './Button.css';
 
 interface IButtonProps {
-    buttonType: 'primary' | 'secondary';
+    buttonType: 'primary' | 'secondary' | 'reject';
     onClick: () => void;
     text: string;
 }
