@@ -3,6 +3,7 @@ import AmountPresentor from "./AmountPresentor";
 import AmountChanger from "./AmountChanger";
 import NamePresentor from "./NamePresentor";
 import NameChanger from "./NameChanger";
+import Checker from "./Checker";
 
 
 const aboutUsTitle: string = 'This is About Us Component'
@@ -29,7 +30,6 @@ const AboutUs = () => {
     }
 
 
-
     return (
         <>
             <h1>
@@ -39,11 +39,7 @@ const AboutUs = () => {
             <AmountChanger increaseAmount={amountUpHandler} decreaseAmount={amountDownHandler}/>
             <NamePresentor nameToPresent={name}/>
             <NameChanger nameAdder={nameAdder} namesToAdd={names}/>
-            {/*task 3: name changer*/}
-            {/*task 4: check equals will have a button that if the amount and the names length is the same: will alert success*/}
-            {/*<NamePresentor/>*/}
-            {/*<NameChanger/>*/}
-            {/*<CheckEquals/>*/}
+            <Checker amountToCheck={amount} nameToCheck={name}/>
 
 
         </>
