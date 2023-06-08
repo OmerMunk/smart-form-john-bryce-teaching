@@ -9,9 +9,12 @@ const NameChanger = (props: INameChangerProps) => {
     const [amountNamesAdded, setAmountNamesAdded] = useState<number>(1)
 
     const nameAddHandler = () => {
-        props.nameAdder(props.namesToAdd[amountNamesAdded])
-
-        setAmountNamesAdded(prevState => prevState + 1)
+        if (amountNamesAdded < props.namesToAdd.length){
+            props.nameAdder(props.namesToAdd[amountNamesAdded])
+            setAmountNamesAdded(prevState => prevState + 1)
+        } else {
+            alert('No more name man!')
+        }
     }
 
     return (
