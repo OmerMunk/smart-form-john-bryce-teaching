@@ -3,7 +3,7 @@
 
 ## Overview
 - JSX (we commonly use html, css, JS)
-- It all compiles to a full html css js project
+- It all compiles to a full html css js project (The browser gets only one HTML file)
 - SPA (Single Page Application)
 
 ## Practice
@@ -16,7 +16,7 @@
         - Box.tsx
         - Box.css
 - We would prefer make components instead of writing html
-- We would prefer doing something reusable if we can
+- We would prefer doing something reusable if we can (props)
 
 ## Component Structure Example:
 ```tsx
@@ -38,9 +38,17 @@ interface IBoxProps {
  * @param props
  */
 const Box = (props: IBoxProps) => {
-    
-    return(
-        <div style={{backgroundColor: props.background ?? 'purple'}} >
+
+  /**
+   * React Logic (use state, handlers...)
+   */
+
+
+  /**
+   * Actual UI
+   */
+  return(
+          <div style={{backgroundColor: props.background ?? 'purple'}} >
           
         </div>
     )
@@ -51,6 +59,20 @@ const Box = (props: IBoxProps) => {
  * Component export
  */
 export default Box;
+```
+
+## useState
+- by default - nothing is suppost to change in the render of the component
+- BUT - if we want the component to RE-RENDER when something is changed - we will put this somethin in useState
+- if a change of a state depends on its previous state, we will use prevState syntax:
+- example:
+  - ```tsx
+    // const  [state, setState] = useState<type of the state>(initial value)
+    const [amount, setAmount] = useState<number>(0)
+    
+    //when we want to change: (lets say this is in a onClick of a button)
+    setAmount(prevAmount => prevAmount+1)
+    ```
 ```
 
 
