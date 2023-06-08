@@ -11,13 +11,18 @@ const AboutUs = () => {
 
     const [amount, setAmount] = useState<number>(0)
 
+    const amountUpHandler = () => {
+        setAmount(prevAmount => prevAmount + 1)
+    }
+
+
     return(
         <>
             <h1>
                 {aboutUsTitle}
             </h1>
-            <AmountPresentor/>
-            <AmountChanger/>
+            <AmountPresentor amountToPresent={amount}  />
+            <AmountChanger changeAmount={amountUpHandler}/>
 
 
 
