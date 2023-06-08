@@ -1,5 +1,6 @@
 interface IAmountChangerProps {
-    changeAmount: () => void
+    increaseAmount: () => void;
+    decreaseAmount: () => void;
 }
 
 const foo = () => {
@@ -12,10 +13,12 @@ const AmountChanger = (props: IAmountChangerProps) => {
             <h3>
                 I am amount changer
             </h3>
-            <button
-            onClick={props.changeAmount}
-            >
+            <button onClick={props.increaseAmount}>
                 MORE AMOUNT PLEASE
+            </button>
+
+            <button onClick={props.decreaseAmount}>
+                LESS AMOUNT PLEASE
             </button>
         </>
     )
