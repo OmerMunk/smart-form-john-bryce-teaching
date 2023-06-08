@@ -1,8 +1,16 @@
+/**
+Component Imports
+ */
+
 import axios from "axios";
 import Button from "../../components/Button/Button";
 import {useState} from "react";
 import Box from "../../components/Box/Box";
 
+
+/**
+ * Component Definitions
+ */
 const API_URL: string = 'https://api.kanye.rest'
 const Kanye = () => {
 

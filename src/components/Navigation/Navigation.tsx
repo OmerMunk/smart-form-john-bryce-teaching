@@ -1,9 +1,10 @@
 import {NavLink} from "react-router-dom";
 import './Navigation.css';
 
+
 const Navigation = () => {
     return (
-        <nav className='main-navigation' >
+        <nav className='main-navigation'>
             <NavLink to={'/home'}>
                 Home
             </NavLink>

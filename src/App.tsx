@@ -1,3 +1,7 @@
+/**
+ * Components IMports
+ */
+
 import React, {useState} from 'react';
 import './styles/styles.css'
 import Box from "./components/Box/Box";
